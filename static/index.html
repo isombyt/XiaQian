@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>虾签--虾米自动签到</title>
+<meta http-equiv="Content-Type" content="text/html; UTF-8" charset="UTF-8"/>
+<meta http-equiv="content-type" content="application/xhtml" />
+<meta name="description" content="虾米自动签到"> 
+<meta name="keyword" content="虾签,虾米,签到,自动签到,虾米签到"> 
+<link href="index.css" rel="stylesheet" media="screen" type="text/css" />
+<script>
+	function check(){
+		var email=document.getElementById("email").value;
+		if (email=='')
+		{
+			alert("先填了Email地址再摸我！");
+		}else{
+			document.location="check?email="+email;
+		}
+	}
+</script>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <!--h1>虾米自动签到系统</h1-->
+  </div>
+  <div class="content">
+    <div class="clear"></div>
+    <form id="usereg" action="/" method="POST" name="form">
+      <p>
+        <label class="label_p">Email地址：<a href="#" onclick="javascript:check();return false;">看看我登记了没</a></label>
+        <input id="email" class="input" size="20" name="email"  value=""/>
+      </p>
+      <p>
+        <label class="label_p">密码：</label>
+        <input id="password" class="input" value="" size="20" name="password" type="password"/>
+      </p>
+      <p class="message">
+        <input type="checkbox"  checked name="notifyme"/>
+        签到失败通知我(开放测试中)</p>
+      <p class="message">
+        <input type="checkbox"  checked name="savepw" />
+        在服务器保存密码(明文保存) </p>
+      <p id="submit">
+        <input class="m_submit" type="submit" value="侵略!?イカ娘" name="LoginButton" />
+      </p>
+    </form>
+  </div>
+  <div class="footer">
+  	<p>没有帐号?<a href="http://www.xiami.com/member/register">这里注册</a></p>
+    <p>使用cookie保存虾米登录状态</p>
+    <p>可选使用密码登录</p>
+    <p>若用户更改虾米密码，请重新登记</p>
+    <p>程序：<a href="https://plus.google.com/117324733931608718228">IsoMByt</a>
+	(<a href="http://isombyt.me">BLOG</a>)</p>
+    <p>前端：<a href="https://plus.google.com/102295696386004346196">Debread</a></p>
+  </div>
+</div>
+</body>
+</html>

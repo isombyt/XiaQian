@@ -1,0 +1,118 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+* {
+	padding:0;
+	margin:0;
+}
+body {
+	font-family: arial, sans-serif;
+	font-size:14px;
+	text-align:center;
+	background:#fff url(bg.png) scroll no-repeat 50% -10%;
+}
+
+.clear {
+	clear:both;
+}
+.main {
+	margin:0px auto;
+	width:320px;
+}
+.header {
+	margin-top:220px;
+	margin-bottom:5px;
+	text-shadow:#FFF 1px 1px 0;
+	color:#666;
+}
+.content {
+	margin:0 20px 0 20px;
+	/*width:280px;*/
+	padding:30px 20px 30px 20px;
+	border:solid 3px #035194;
+	background:#fff;
+	text-align:start;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	box-shadow:rgba(180, 180, 180, 0.9) 0 7px 10px 3px;
+	-webkit-box-shadow:rgba(180, 180, 180, 0.9) 0 7px 10px 3px;
+	-moz-box-shadow:rgba(180, 180, 180, 0.9) 0 7px 10px 3px;
+	overflow:hidden;
+}
+label.label_p {
+	color:#666;
+	font-size:13px;
+	display:block;
+	margin-bottom:3px;
+}
+.input {
+	margin-bottom:15px;
+	padding:2px;
+	width:230px;
+	height:20px;
+	cursor:text;
+	border:1px solid #9ec3df;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	box-shadow:inset 1px 1px 2px rgba(200, 200, 200, 0.4);
+	-moz-box-shadow:inset 1px 1px 2px rgba(200, 200, 200, 0.4);
+	-webkit-box-shadow:inset 1px 1px 2px rgba(200, 200, 200, 0.4);
+}
+.input:focus {
+	border:1px solid #ff822f;
+	box-shadow:0 0 6px #ffcb99;
+	-moz-box-shadow:0 0 6px #ffcb99;
+	-webkit-box-shadow:0 0 6px #ffcb99;
+}
+.content form p {
+	font-size:13px;
+	color:#666;
+}
+
+.message {
+}
+
+#submit {
+}
+
+.m_submit {
+	margin:5px 5px 0 0;
+	background:#f1a543;
+	border:1px solid #ea7125;
+	width:90px;
+	height:30px;
+	color:#fff;
+	font-weight:700;
+	border-radius:2px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	text-shadow:rgba(0, 0, 0, 0.3) 0 -1px 0;
+	display:block;
+	float:right;
+}
+.m_submit:hover {
+	background:#ea7125;
+	border:1px solid #cd5a13;
+}
+
+a {
+	text-decoration:none;
+	color:#ea7125;
+}
+.footer {
+	margin-top:5px;
+	padding-left:30px;
+	padding-right:5px;
+	text-align:left;
+	color:#333;
+}
+.footer a {
+	
+	font-size:16px;
+	color:#039;
+}
+.footer a:hover {
+	color:#03f;
+}
