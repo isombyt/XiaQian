@@ -85,3 +85,7 @@ class User:
             return int(days)
         return None
 
+if __name__ == "__main__":
+    user = User()
+    user.login("email","password")
+    print user.checkin()
